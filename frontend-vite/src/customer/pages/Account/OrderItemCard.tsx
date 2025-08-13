@@ -13,7 +13,8 @@ interface OrderItemCardProps{
 const OrderItemCard:React.FC<OrderItemCardProps> = ({item,order}) => {
     const navigate = useNavigate()
     return (
-        <div onClick={() => navigate(`/account/orders/${order.id}/${item.id}`)} className='text-sm bg-white p-5 space-y-4 border rounded-md cursor-pointer'>
+        <div onClick={() => navigate(`/account/orders/${order.id}/${item.id}`)} 
+        className='text-sm bg-white p-5 space-y-4 border rounded-md cursor-pointer'>
 
             <div className='flex items-center gap-3'>
                 <div>

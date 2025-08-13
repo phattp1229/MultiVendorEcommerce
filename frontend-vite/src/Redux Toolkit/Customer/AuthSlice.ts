@@ -1,4 +1,4 @@
-// src/slices/authSlice.ts
+
 import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { api } from '../../Config/Api';
@@ -20,7 +20,7 @@ const initialState: AuthState = {
     role: null,
     loading: false,
     error: null,
-    otpSent:false
+    otpSent: false
 };
 
 // Define the base URL for the API
@@ -31,11 +31,11 @@ export const sendLoginSignupOtp = createAsyncThunk<ApiResponse, { email: string 
     async ({ email }, { rejectWithValue }) => {
         try {
             const response = await api.post(`${API_URL}/sent/login-signup-otp`, { email });
-            console.log("otp sent successfully",response.data);
+            console.log("otp sent successfully", response.data);
             return response.data;
-        } catch (error:any) {
-            console.log("error",error.response)
-            return rejectWithValue(error.response.data.error||'Failed to send OTP');
+        } catch (error: any) {
+            console.log("error", error.response)
+            return rejectWithValue(error.response.data.error || 'Failed to send OTP');
         }
     }
 );
@@ -45,12 +45,12 @@ export const signup = createAsyncThunk<AuthResponse, SignupRequest>(
     async (signupRequest, { rejectWithValue }) => {
         console.log("signup ", signupRequest)
         try {
-            
+
             const response = await api.post<AuthResponse>(`${API_URL}/signup`, signupRequest);
-           signupRequest.navigate("/")
-           localStorage.setItem("jwt",response.data.jwt)
+            signupRequest.navigate("/")
+            localStorage.setItem("jwt", response.data.jwt)
             return response.data;
-        } catch (error:any) {
+        } catch (error: any) {
             return rejectWithValue('Signup failed');
         }
     }
@@ -61,11 +61,11 @@ export const signin = createAsyncThunk<AuthResponse, LoginRequest>(
     async (loginRequest, { rejectWithValue }) => {
         try {
             const response = await api.post<AuthResponse>(`${API_URL}/signin`, loginRequest);
-           console.log("login successful", response.data)
-           localStorage.setItem("jwt",response.data.jwt)
-           loginRequest.navigate("/");
+            console.log("login successful", response.data)
+            localStorage.setItem("jwt", response.data.jwt)
+            loginRequest.navigate("/");
             return response.data;
-        } catch (error:any) {
+        } catch (error: any) {
             console.log("error ", error.response)
             return rejectWithValue('Signin failed');
         }
@@ -78,7 +78,7 @@ export const resetPassword = createAsyncThunk<ApiResponse, ResetPasswordRequest>
         try {
             const response = await api.post<ApiResponse>(`${API_URL}/reset-password`, resetPasswordRequest);
             return response.data;
-        } catch (error:any) {
+        } catch (error: any) {
             return rejectWithValue('Reset password failed');
         }
     }
@@ -90,7 +90,7 @@ export const resetPasswordRequest = createAsyncThunk<ApiResponse, { email: strin
         try {
             const response = await api.post<ApiResponse>(`${API_URL}/reset-password-request`, { email });
             return response.data;
-        } catch (error:any) {
+        } catch (error: any) {
             return rejectWithValue('Reset password request failed');
         }
     }

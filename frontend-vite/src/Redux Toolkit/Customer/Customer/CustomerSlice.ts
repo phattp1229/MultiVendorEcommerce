@@ -11,7 +11,7 @@ interface HomeState {
 }
 
 const initialState: HomeState = {
-  homePageData:null,
+  homePageData: null,
   homeCategories: [],
   loading: false,
   error: null,

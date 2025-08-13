@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useAppSelector } from "../../../../Redux Toolkit/Store";
 
 const grid = [
@@ -6,37 +6,37 @@ const grid = [
         "section": "GRID",
         "name": "women lehenga cholis",
     image:
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23807268/2023/6/29/9930b235-5318-4755-abbe-08f99e969e781688026636544LehengaCholi7.jpg",
+      "https://images.pexels.com/photos/2916814/pexels-photo-2916814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {"categoryId":"men_formal_shoes",
         "section": "GRID",
         "name": "men formal shoes",
     image:
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/24651572/2023/8/25/4fbf6d8c-d093-46c5-a5a6-7dd67c0c76551692964752597HouseofPataudiMenTanFauxLeatherFormalSlipOnLoafers1.jpg",
+      "https://tse1.mm.bing.net/th/id/OIP.hlhC0L07E6Zfiek0L_kcAAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {"categoryId":"women_lehenga_cholis",
         "section": "GRID",
         "name": "women lehenga cholis",
     image:
-      "https://images.pexels.com/photos/12730873/pexels-photo-12730873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://promotions.newegg.com/nepro/25-0685/1150x320@2x.jpg",
   },
   {"categoryId":"men_sherwanis",
         "section": "GRID",
         "name": "men sherwanis",
     image:
-      "https://shreeman.in/cdn/shop/files/20_3cfbd5a3-ecb6-482a-b798-7ffd9de1c784.jpg?v=1712061674&width=700",
+      "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?_gl=1*1yav5io*_ga*MTUwNDI4MjkwMC4xNzUzMjM2NTYw*_ga_8JE65Q40S6*czE3NTMyMzg5NjIkbzIkZzEkdDE3NTMyMzg5NzYkajQ2JGwwJGgw",
   },
   {"categoryId":"women_jewellery",
         "section": "GRID",
         "name": "women jewellery",
     image:
-      "https://media.istockphoto.com/id/1276740597/photo/indian-traditional-gold-necklace.jpg?b=1&s=612x612&w=0&k=20&c=S-QnNZKqf2u3L-GIaDiIinNRU74GBWQaIDwY7gYJboY=",
+      "https://dlcdnwebimgs.asus.com/gain/AF782FBE-08C0-48C6-A86D-3B72598F9AD6/fwebp/fwebp",
   },
   {"categoryId":"women_footwear",
         "section": "GRID",
         "name": "women footwear",
     image:
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13837166/2021/8/19/04e40e02-4c56-4705-94d0-f444b29973aa1629373611707-House-of-Pataudi-Women-Maroon-Embellished-Handcrafted-Wedges-1.jpg",
+      "https://img.freepik.com/premium-photo/picture-laptop_931878-305748.jpg",
   },
 ];
 const TopBrand = () => {

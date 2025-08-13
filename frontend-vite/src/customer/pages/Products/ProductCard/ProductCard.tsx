@@ -69,14 +69,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ item }) => {
 
     return (
         <>
-            <div
-                onClick={() =>
-                    navigate(
-                        `/product-details/${item.category?.categoryId}/${item.title}/${item.id}`
-                    )
-                }
-                className="group px-4 relative"
-            >
+            <div onClick={() => navigate(`/product-details/${item.category?.categoryId}/${item.title}/${item.id}`)}
+                className="group px-4 relative">
                 <div
                     className="card "
                     onMouseEnter={() => setIsHovered(true)}

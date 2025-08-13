@@ -30,7 +30,7 @@ const PricingCard = ({ showBuyButton, SubmitButton }: any) => {
           <span>₹ 79</span>
         </div>
         <div className="flex justify-between items-center">
-          <span>plateform fee</span>
+          <span>Platform fee</span>
           <span className="text-teal-600">Free</span>
         </div>
       </div>

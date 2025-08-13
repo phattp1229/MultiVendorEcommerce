@@ -8,7 +8,7 @@ import type { Deal } from "../../../../types/dealTypes";
 
 export default function DealSlider() {
     const {homePage}=useAppSelector(store=>store)
-    var settings = {
+    const settings = {
         dots: true,
         infinite: true,
         slidesToShow: 6,
